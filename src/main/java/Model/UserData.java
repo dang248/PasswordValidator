@@ -1,3 +1,5 @@
+package Model;
+
 public class UserData {
     private String fullName;
     private String userName;

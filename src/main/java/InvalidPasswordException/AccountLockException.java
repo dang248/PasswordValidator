@@ -1,2 +1,8 @@
-package PACKAGE_NAME;public class AccountLockException {
+package InvalidPasswordException;
+
+public class AccountLockException extends InvalidPasswordException {
+    @Override
+    String getExceptionMessage() {
+        return "Mat khau trung voi mat khau trong black list";
+    }
 }

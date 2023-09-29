@@ -1,2 +1,8 @@
-package PACKAGE_NAME;public class ExpirationException {
+package InvalidPasswordException;
+
+public class ExpirationException extends InvalidPasswordException {
+    @Override
+    String getExceptionMessage() {
+        return "Mat khau trung voi mat khau trong black list";
+    }
 }
